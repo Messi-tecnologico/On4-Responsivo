@@ -233,50 +233,7 @@ Exercício para treinar: https://flexboxfroggy.com/#pt-br
 
 ## Exercício - Aula 24/10
 
-**Layout Desktop**
-
-![mundo-gelado-desktop](./imagens/mundo-gelado-desktop.png)
-
-**Layout Mobile**
-
-![mundo-gelado-mobile](./imagens/mundo-gelado-mobile.png)
-
-**Fontes:**
-
-Fonte padrão do site: Nunito
-
-Fonte dos títulos: Varela Round
-
-_Ambas fontes estão disponíveis no Google Fonts._
-
-**Tamanho das fontes:**
-
-Título principal: 105px
-
-Títulos secundários: 22px
-
-Botões e links: 13px
-
-Parágrafos: 14px
-
-**Cores:**
-
-Header menu: #a0bed0 
-
-Background: #f8f9fa 
-
-Botões e bordas azuis: #829dad 
-
-Botões hover: #36b0e0 
-
-Preto: #161616 
-
-Branco opaco: #fff (com 50% de opacidade - _opcional, pode ser o branco tradicional_)
-
-Preto opaco: #000 (com 50% de opacidade - _opcional, pode ser o preto tradicional_)
-
-Título: #fff 
-
+>>Página de Currículo pessoal
 
 __________________________________________
 Links para consulta:
