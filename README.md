@@ -25,7 +25,7 @@ Layout Responsivo:
 
 <div id='layoutResponsivo'></div>
 
-**Adaptativo e Responsivo:**
+**ADAPTATIVO E RESPONSIVO:**
 
 O conceito de layout responsivo surgiu em 2010, com o designer Ethan Marcotte
 (https://alistapart.com/d/responsive-web-design/ex/ex-site-flexible.html https://alistapart.com/article/responsive-web-design) como uma forma de facilitar a adaptação de telas aos mais diversos tipos de tamanhos que começaram a surgir no mercado.
@@ -59,7 +59,7 @@ O conceito de layout responsivo surgiu em 2010, com o designer Ethan Marcotte
 
   <div id='resolucaoTamanho'></div>
 
-**Resolução de tela x tamanho de tela:**
+**RESOLUÇÃO DE TELA x TAMANHO DE TELA:**
 
   * Resolução de tela: A resolução da tela de um dispositivo é o número de pixels em cada dimensão que podem ser exibidos.
 
@@ -81,7 +81,7 @@ O conceito de layout responsivo surgiu em 2010, com o designer Ethan Marcotte
 
 <div id='breakpointsMedia'></div>
 
-**Media Queries:**
+**MEDIA QUERIES:**
 
   A partir de **breakpoints**, ou seja, tamanho de telas especificados pelo desenvolvedor, tem-se a variação do site de modo que todo o conteúdo/funcionalidades fique bem adaptados nessa telas.
   No CSS, é onde são especificados esses breakpoints, e isso é pensado de acordo com as necessidades dos sites (público, negócio, etc).
@@ -161,7 +161,7 @@ Esta tag diz ao browser para renderizar o conteúdo do site de acordo com os dif
       }
     }
   ```
-  **Grid Fluido:**
+  **GRID FLUIDO:**
   É o uso de % ao invés de valores absolutos(px) para definir tamanhos de elementos no CSS. Essa é uma técnica que pode ser usada sempre, não apenas visando os layouts responsivos.
  <https://www.w3schools.com/Css/css_rwd_grid.asp>
 
@@ -177,7 +177,7 @@ Esta tag diz ao browser para renderizar o conteúdo do site de acordo com os dif
 
 <div id='unidadesMedida'></div>
 
-**Font-size e a Unidades de Medidas em Responsividade:**
+**FONT-SIZE E AS UNIDADES DE MEDIDAS EM RESPONSIVIDADE:**
 
 Quando iniciamos o projeto de um site, é importante termos em mente que o browser já aplica um tamanho padrão de fonte.
 (foto de fonte do google)
@@ -202,7 +202,7 @@ Então se queremos alterar o tamanho da fonte para nosso projeto, teremos que ap
 
 ---
 
-**Imagens responsivas:**
+**IMAGENS RESPONSIVAS:**
 
 Ao se trabalhar com imagens em um projeto, devemos deixá-las escaláveis para responder proporcionalmente ao tamanho de variadas telas.
 Um bom macete para fazer com que todas as imagens usadas no projeto sejam também responsivas, é criar uma classe no CSS, e aplicar essa classe em todas as tags de imagem do HTML.
@@ -217,7 +217,7 @@ Um bom macete para fazer com que todas as imagens usadas no projeto sejam també
   display: block;
 }
 ```
- **Formatos de arquivo de imagens:**
+ **FORMATOS DE ARQUIVOS DE IMAGENS:**
   * JPEG ou JPG: mais popular e permite compressão de imagens. Salvar em JPG imagens mais simples que não precisem ser aumentadas
   * PNG: imagens com transparência e melhor qualidade. Também permite compressão e com qualidade melhor que JPG mas são arquivos mais pesados.
   * SVG: É um vetor e não uma imagem. Ele é um arquivo com instruções xml que criam um desenho vetorizado na tela. O .sg não perde qualidade e pode ser ampliado quase infinitamente. É recomendado para ícones e logotipos.
@@ -227,7 +227,7 @@ Um bom macete para fazer com que todas as imagens usadas no projeto sejam també
 
 <div id='mobileFirst'></div>
 
-**O que é Mobile First:**
+**O QUE É MOBILE FIRST:**
 
 Quando construimos o nosso projeto para que seja prioritariamente visualizado em formato mobile. Assim a contrução do nosso CSS parte de configuraçao e funcionalidade que serão usados em devices menores, como um celular, por exemplo.
 
@@ -243,7 +243,7 @@ Quando construimos o nosso projeto para que seja prioritariamente visualizado em
 
 ---
 
-**Display: flex:**
+**DISPLAY: FLEX :**
 
 A propriedade de css display: flex permite alinhar com facilidade elementos lado a lado.
 Você deve adicionar a propriedade no elemento pai para alinhar o conteúdo filho lado a lado.
@@ -268,7 +268,7 @@ Guia Flexbox: <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
 
 ---
 
-**Cross-browser testing:**
+**CROSS-BROWSER TESTING:**
 
 Testar seu projeto ou aplicação em diferentes navegadores (browsers) e observar se todos ou a maioria deles mantém estilo e funcionalidades originais sem comprometer sua qualidade de navegaçao/usabilidade.
 
