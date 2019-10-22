@@ -21,7 +21,7 @@ Layout Responsivo:
 
 **[Exercício - Aula 25/10](#exercicio)**
 
----
+***
 
 <div id='layoutResponsivo'></div>
 
@@ -33,13 +33,13 @@ O conceito de layout responsivo surgiu em 2010, com o designer Ethan Marcotte
 ![gif-responsivo](https://cdn.dribbble.com/users/1112522/screenshots/5348827/mondrian-art-css-grid.gif)
 
 
-* Responsivo e Adaptativo são praticamente a mesma coisa em se tratando de mudar a aparência/funcionalidade do site em diferentes tamanhos de telas - mais especificamente na largura (width)
+* **Responsivo** e **Adaptativo** são praticamente a mesma coisa em se tratando de mudar a aparência/funcionalidade do site em diferentes tamanhos de telas - mais especificamente na largura (width)
 
-  **Diferenças:**
+  **Diferenças de termos:**
 
-  * _Responsivo(grid fluido)_: ele 'responde' ao tamanho do browser, independente de marcação pontos específicos onde os tamanhos mudam, adaptando todo o conteúdo e funcionalidades.
+  * **Responsivo(grid fluido)**: ele 'responde' ao tamanho do browser, independente de marcação pontos específicos onde os tamanhos mudam, adaptando todo o conteúdo e funcionalidades.
 
-  * _Adaptativo(media-queries)_: o conteúdo se molda em determinados pontos de mudanças de tamanho da tela. Estes pontos (breakpoints) são especificados no CSS, indicando qual conteúdo e como ele se modifica exatamente a partir desses pontos.
+  * **Adaptativo(media-queries)**: o conteúdo se molda em determinados pontos de mudanças de tamanho da tela. Estes pontos (breakpoints) são especificados no CSS, indicando qual conteúdo e como ele se modifica exatamente a partir desses pontos.
 
   ![adaptativo-responsivo](https://cdn-images-1.medium.com/max/1600/0*OVrwzPJUFzwId2gM.)
 
@@ -63,17 +63,17 @@ O conceito de layout responsivo surgiu em 2010, com o designer Ethan Marcotte
 
   * Resolução de tela: A resolução da tela de um dispositivo é o número de pixels em cada dimensão que podem ser exibidos.
 
-  ![pixel](https://builtvisible.com/wp-content/uploads/2015/03/mario-big.png)
+       ![pixel](https://www.exposureguide.com/media/resolution-of-the-image-in-pixels.jpg?x51595)
 
   * Tamanho de tela: tamanho físico da tela, normalmente medido em polegadas
 
-  ![screens](https://res.cloudinary.com/practicaldev/image/fetch/s--Sed0tQ_i--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://cdn-images-1.medium.com/max/800/1%2AOkcOPoWR3bxKY2axlDX9UA.gif)
+       ![screens](https://res.cloudinary.com/practicaldev/image/fetch/s--Sed0tQ_i--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://cdn-images-1.medium.com/max/800/1%2AOkcOPoWR3bxKY2axlDX9UA.gif)
 
   A resolução de monitores de dispositivos digitais indica o número de pontos (ou pixels) que compõem a imagem que aparece na tela. Uma tela com 1920 x 1080 mostra 1920 pontos em cada uma das 1080 linhas do monitor!
+  
+  ![dpi](https://miro.medium.com/max/1240/1*nDCtsXEWZQotmCUQuR8jmQ.png)
 
   A qualidade da definição de uma imagem ou texto que aparece na tela depende da relação entre o número de pontos por polegada quadrada (ppi, pixels per inch) com que a tela está configurada, sua resolução nativa e o tamanho físico do monitor.
-
-  ![dpi](https://miro.medium.com/max/1240/1*nDCtsXEWZQotmCUQuR8jmQ.png)
 
   Dispositivos com o mesmo tamanho podem ter resoluções de tela diferentes!
 
@@ -86,7 +86,7 @@ O conceito de layout responsivo surgiu em 2010, com o designer Ethan Marcotte
   A partir de **breakpoints**, ou seja, tamanho de telas especificados pelo desenvolvedor, tem-se a variação do site de modo que todo o conteúdo/funcionalidades fique bem adaptados nessa telas.
   No CSS, é onde são especificados esses breakpoints, e isso é pensado de acordo com as necessidades dos sites (público, negócio, etc).
 
-  ![sizes](https://codetea.com/content/images/2017/04/Responsive-Pure-CSS-Masonry-Layout.gif)
+   ![sizes](https://codetea.com/content/images/2017/04/Responsive-Pure-CSS-Masonry-Layout.gif)
 
   Com as media queries e os breakpoints vamos começar a adicionar um pouco de lógica no css. O que vai acontecer é que o browser vai ler a folha de estilos, e SE a condição for verdadeira, ela vai executar o bloco de código, SENÃO ele vai apenas ignorá-lo.
 
@@ -161,6 +161,7 @@ Esta tag diz ao browser para renderizar o conteúdo do site de acordo com os dif
       }
     }
   ```
+  
   **GRID FLUIDO:**
   É o uso de % ao invés de valores absolutos(px) para definir tamanhos de elementos no CSS. Essa é uma técnica que pode ser usada sempre, não apenas visando os layouts responsivos.
  <https://www.w3schools.com/Css/css_rwd_grid.asp>
@@ -297,9 +298,10 @@ Testar seu projeto ou aplicação em diferentes navegadores (browsers) e observa
 
 Links para consulta:
 
-https://www.w3schools.com/Css/css_rwd_mediaqueries.asp
-https://css-tricks.com/the-difference-between-responsive-and-adaptive-design/
-https://drafts.csswg.org/css-values-3/#font-relative-lengths
-https://www.softwaretestinghelp.com/how-is-cross-browser-testing-performed/
-https://nextecommerce.com.br/design-responsivo-ou-entrega-adaptativa-o-que-e-melhor-para-o-marketing-digital/
-https://www.freecodecamp.org/news/how-to-make-your-html-responsive-by-adding-a-single-line-of-css-2a62de81e431/
+<https://www.w3schools.com/Css/css_rwd_mediaqueries.asp>
+<https://css-tricks.com/the-difference-between-responsive-and-adaptive-design/>
+<https://drafts.csswg.org/css-values-3/#font-relative-lengths>
+<https://www.softwaretestinghelp.com/how-is-cross-browser-testing-performed/>
+<https://nextecommerce.com.br/design-responsivo-ou-entrega-adaptativa-o-que-e-melhor-para-o-marketing-digital/>
+<https://www.freecodecamp.org/news/how-to-make-your-html-responsive-by-adding-a-single-line-of-css-2a62de81e431/>
+<https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout>
