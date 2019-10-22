@@ -57,11 +57,11 @@ O conceito de layout responsivo surgiu em 2010, com o designer Ethan Marcotte
   
   <div id='resolucaoTamanho'></div>
 
-**Resolução de tela x tamanho de tela**
+**Resolução de tela x tamanho de tela:**
 
-  * _Resolução de tela_: A resolução da tela de um dispositivo é o número de pixels em cada dimensão que podem ser exibidos.
+  * Resolução de tela: A resolução da tela de um dispositivo é o número de pixels em cada dimensão que podem ser exibidos.
 
-  * _Tamanho de tela_: tamanho físico da tela, normalmente medido em polegadas
+  * Tamanho de tela: tamanho físico da tela, normalmente medido em polegadas
 
   A resolução de monitores de dispositivos digitais indica o número de pontos (ou pixels) que compõem a imagem que aparece na tela. Uma tela com 1920 x 1080 mostra 1920 pontos em cada uma das 1080 linhas do monitor!
 
@@ -73,12 +73,12 @@ O conceito de layout responsivo surgiu em 2010, com o designer Ethan Marcotte
 
 **Media Queries:**
 
-  A partir de _breakpoints_, ou seja, tamanho de telas especificados pelo desenvolvedor, tem-se a variação do site de modo que todo o conteúdo/funcionalidades fique bem adaptados nessa telas.
+  A partir de **breakpoints**, ou seja, tamanho de telas especificados pelo desenvolvedor, tem-se a variação do site de modo que todo o conteúdo/funcionalidades fique bem adaptados nessa telas.
   No CSS, é onde são especificados esses breakpoints, e isso é pensado de acordo com as necessidades dos sites (público, negócio, etc).
 
   Com as media queries e os breakpoints vamos começar a adicionar um pouco de lógica no css. O que vai acontecer é que o browser vai ler a folha de estilos, e SE a condição for verdadeira, ela vai executar o bloco de código, SENÃO ele vai apenas ignorá-lo.
 
-  _SEMPRE LEMBRAR_:
+  **SEMPRE LEMBRAR:**
   Sempre que trabalharmos com 'MEDIA QUERIES' temos que usar a metatag de nome VIEWPORT, da seguinte maneira:
   
   ```
@@ -94,62 +94,72 @@ Esta tag diz ao browser para renderizar o conteúdo do site de acordo com os dif
   * Trabalhando com 'MEDIA QUERIES':
 
     Se [largura do dispositivo] for menor ou igual a 768px, então execute o {...}
+    ```
         @media (max-width: 768px) {
           .nome-da-classe {
             color: #fff; /* elemento que vai ser modificado/adicionado/sobrescrito nessa resolução */
           }
         }
+    ```
 
     Se [largura do dispositivo] for maior ou igual a 768px, então execute o {...}
+    ```
         @media (min-width: 768px) {
           .nome-da-classe {
             color: #fff; /* elemento que vai ser modificado/adicionado/sobrescrito nessa resolução */
           }
         }
+     ```
 
     Se [largura do dispositivo] for entre 768px e 600px, então execute o {...}
+    ```
         @media (max-width: 768px) and (min-width: 600px) {
           .nome-da-classe {
             color: #fff; /* elemento que vai ser modificado/adicionado/sobrescrito nessa resolução */
           }
         }
-
+    ```
+ 
 
   /* esse é um bloco normal de css, o browser vai ler e mostrar esses valores na tela do usuário */
+  ```
     .box {
       border: 1px solid #000;
       width: 320px;
       height: 120px;
       background-color: red;
     }
+  ```
 
   /* esse é um bloco condicional, o browser vai ler e mostrar esses valores na tela do usuário SE a resolução da tela for menor que 768px */
+  ```
     @media (max-width: 768px) {
       .box {
         background-color: blue;
       }
     }
+  ```
 
   /* esse é um bloco condicional, o browser vai ler e mostrar esses valores na tela do usuário SE a resolução da tela for menor que 420px */
+  ```
     @media (max-width: 420px) {
       .box {
         width: 100%;
         background-color: yellow;
       }
     }
-
-    * Grid Fluido:
-    É o uso de % ao invés de valores absolutos (px) para definir tamanhos de elementos no css. Essa é uma técnica que pode ser     usada sempre, não apenas visando os layouts responsivos.
-    <https://www.w3schools.com/Css/css_rwd_grid.asp>
-
+  ```
+  **Grid Fluido:**
+  É o uso de % ao invés de valores absolutos(px) para definir tamanhos de elementos no CSS. Essa é uma técnica que pode ser usada sempre, não apenas visando os layouts responsivos.
+ <https://www.w3schools.com/Css/css_rwd_grid.asp>
 
   **IMPORTANTE:**
     Como o termo Responsividade é um conceito já implementado, ambos os casos - Adaptativo e Responsivo - são sempre               considerados RESPONSIVIDADE!
     Em nossa aula vamos focar no desenvolvimento da Responsividade com Media-Queries, ou seja, com 'breakpoints' definidos.
     Assim trabalharemos com os seguintes 'breakpoints':
-    1280px (desktop)
+    **1280px (desktop)
     768px (tablet - vertical)
-    420px (mobile)
+    420px (mobile)**
 
 <div id='unidadesMedida'></div>
 
@@ -160,7 +170,7 @@ Quando iniciamos o projeto de um site, é importante termos em mente que o brows
 Então se queremos alterar o tamanho da fonte para nosso projeto, teremos que aplicar medidas no CSS. Neste caso, podemos usar medidas absolutas (px), ou relativas(%, em, rem).
 
 **Medida absoluta:**
-  px: o pixel é uma medida fixa, logo absoluta. Quando aplicamos um valor para a fonte em px, dizemos ao navegador que o tamanho da nossa fonte será sempre aquele, independente de tamanho e resolução de telas.
+  * px: o pixel é uma medida fixa, logo absoluta. Quando aplicamos um valor para a fonte em px, dizemos ao navegador que o tamanho da nossa fonte será sempre aquele, independente de tamanho e resolução de telas.
   
 **Medidas relativas:**
   * em: Ao declararmos um valor com unidade em, dizemos que esse número é relativo ao tamanho da fonte do elemento pai.
@@ -195,7 +205,7 @@ Um bom macete para fazer com que todas as imagens usadas no projeto sejam també
 
 <div id='mobileFirst'></div>
 
-**Oque é Mobile First**
+**Oque é Mobile First:**
 
 Quando construimos o nosso projeto para que seja prioritariamente visualizado em formato mobile. Assim a contrução do nosso CSS parte de configuraçao e funcionalidade que serão usados em devices menores, como um celular, por exemplo.
 
@@ -207,7 +217,7 @@ Quando construimos o nosso projeto para que seja prioritariamente visualizado em
         
 <div id='displays'></div>
 
-**Display: flex**
+**Display: flex:**
 
 A propriedade de css display: flex permite alinhar com facilidade elementos lado a lado.
 Você deve adicionar a propriedade no elemento pai para alinhar o conteúdo filho lado a lado.
