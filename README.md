@@ -19,7 +19,7 @@ Layout Responsivo:
 
 8 [Cross-browser testing](#crossBrowser)
 
-**[Exercício - Aula 24/10](#exercicio)**
+**[Exercício - Aula 25/10](#exercicio)**
 
 ---
 
@@ -283,7 +283,7 @@ Testar seu projeto ou aplicação em diferentes navegadores (browsers) e observa
 
  ---
 
-## Exercício - Aula 24/10
+## Exercício - Aula 25/10
 
 **Página de Currículo pessoal:**
  Vamos usar o projeto que desenvolvemos no Workshop - Currrículo Pessoal - e vamos trabalhar a aplicação do conceito de responsividade.
