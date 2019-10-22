@@ -55,6 +55,8 @@ O conceito de layout responsivo surgiu em 2010, com o designer Ethan Marcotte
   * Se o layout e a arquitetura do código não forem desenhadas antes de começar o trabalho, o site pode ficar muito difícil de manter/modificar;
   * O site responsivo pode ser mais demorado para carregar (se tiver muitas imagens redimensionadas, se tiver muitas chamadas externas de scripts, etc.).
 
+  ---
+
   <div id='resolucaoTamanho'></div>
 
 **Resolução de tela x tamanho de tela:**
@@ -74,6 +76,8 @@ O conceito de layout responsivo surgiu em 2010, com o designer Ethan Marcotte
   ![dpi](https://miro.medium.com/max/1240/1*nDCtsXEWZQotmCUQuR8jmQ.png)
 
   Dispositivos com o mesmo tamanho podem ter resoluções de tela diferentes!
+
+  ---
 
 <div id='breakpointsMedia'></div>
 
@@ -169,6 +173,8 @@ Esta tag diz ao browser para renderizar o conteúdo do site de acordo com os dif
     768px (tablet - vertical)
     420px (mobile)**
 
+---
+
 <div id='unidadesMedida'></div>
 
 **Font-size e a Unidades de Medidas em Responsividade:**
@@ -194,6 +200,8 @@ Então se queremos alterar o tamanho da fonte para nosso projeto, teremos que ap
 
 <div id='imagensResponsivas'></div>
 
+---
+
 **Imagens responsivas:**
 
 Ao se trabalhar com imagens em um projeto, devemos deixá-las escaláveis para responder proporcionalmente ao tamanho de variadas telas.
@@ -215,6 +223,8 @@ Um bom macete para fazer com que todas as imagens usadas no projeto sejam també
   * SVG: É um vetor e não uma imagem. Ele é um arquivo com instruções xml que criam um desenho vetorizado na tela. O .sg não perde qualidade e pode ser ampliado quase infinitamente. É recomendado para ícones e logotipos.
   * GIF: Permite salvar animações, porém com qualidade de imagem bem ruim. onde
 
+---
+
 <div id='mobileFirst'></div>
 
 **O que é Mobile First:**
@@ -230,6 +240,8 @@ Quando construimos o nosso projeto para que seja prioritariamente visualizado em
   ![mobile-desktop](https://urucumdigital.com/wp-content/uploads/2019/08/3038367-slide-s-8-9-gifs-that-explain-responsive-design-brilliantly-08desktop-first-vs-mobile-first-3.gif)
 
 <div id='displays'></div>
+
+---
 
 **Display: flex:**
 
@@ -250,8 +262,11 @@ Você deve adicionar a propriedade no elemento pai para alinhar o conteúdo filh
 O display: flex tem propriedade complementares que permitem alinhar os elementos filhos ao centro, à direita, à esquerda, tanto na horizontal como na vertical.
 
 Exercício para treinar: <https://flexboxfroggy.com/#pt-br>
+Guia Flexbox: <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
 
 <div id='crossBrowser'></div>
+
+---
 
 **Cross-browser testing:**
 
@@ -266,11 +281,20 @@ Testar seu projeto ou aplicação em diferentes navegadores (browsers) e observa
 
   <div id='exercicio'></div>
 
+ ---
+
 ## Exercício - Aula 24/10
 
-* Página de Currículo pessoal
+**Página de Currículo pessoal:**
+ Vamos usar o projeto que desenvolvemos no Workshop - Currrículo Pessoal - e vamos trabalhar a aplicação do conceito de responsividade.
+ Utilizaremos os seguintes breakpoints:
+  **768px (tablet - vertical)
+    420px (mobile)
+    375px (mobile)**
 
-__________________________________________
+
+---
+
 Links para consulta:
 
 https://www.w3schools.com/Css/css_rwd_mediaqueries.asp
