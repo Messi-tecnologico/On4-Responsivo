@@ -40,7 +40,7 @@ O conceito de layout responsivo surgiu em 2010, com o designer Ethan Marcotte
   * _Responsivo(grid fluido)_: ele 'responde' ao tamanho do browser, independente de marcação pontos específicos onde os tamanhos mudam, adaptando todo o conteúdo e funcionalidades.
 
   * _Adaptativo(media-queries)_: o conteúdo se molda em determinados pontos de mudanças de tamanho da tela. Estes pontos (breakpoints) são especificados no CSS, indicando qual conteúdo e como ele se modifica exatamente a partir desses pontos.
-  
+
   ![adaptativo-responsivo](https://cdn-images-1.medium.com/max/1600/0*OVrwzPJUFzwId2gM.)
 
   **Pontos positivos Adaptativo:**
@@ -54,21 +54,27 @@ O conceito de layout responsivo surgiu em 2010, com o designer Ethan Marcotte
   * Versões antigas do IE;
   * Se o layout e a arquitetura do código não forem desenhadas antes de começar o trabalho, o site pode ficar muito difícil de manter/modificar;
   * O site responsivo pode ser mais demorado para carregar (se tiver muitas imagens redimensionadas, se tiver muitas chamadas externas de scripts, etc.).
-  
+
   <div id='resolucaoTamanho'></div>
 
 **Resolução de tela x tamanho de tela:**
 
   * Resolução de tela: A resolução da tela de um dispositivo é o número de pixels em cada dimensão que podem ser exibidos.
 
+  ![pixel](https://builtvisible.com/wp-content/uploads/2015/03/mario-big.png)
+
   * Tamanho de tela: tamanho físico da tela, normalmente medido em polegadas
+
+  ![screens](https://res.cloudinary.com/practicaldev/image/fetch/s--Sed0tQ_i--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://cdn-images-1.medium.com/max/800/1%2AOkcOPoWR3bxKY2axlDX9UA.gif)
 
   A resolução de monitores de dispositivos digitais indica o número de pontos (ou pixels) que compõem a imagem que aparece na tela. Uma tela com 1920 x 1080 mostra 1920 pontos em cada uma das 1080 linhas do monitor!
 
   A qualidade da definição de uma imagem ou texto que aparece na tela depende da relação entre o número de pontos por polegada quadrada (ppi, pixels per inch) com que a tela está configurada, sua resolução nativa e o tamanho físico do monitor.
 
+  ![dpi](https://miro.medium.com/max/1240/1*nDCtsXEWZQotmCUQuR8jmQ.png)
+
   Dispositivos com o mesmo tamanho podem ter resoluções de tela diferentes!
-  
+
 <div id='breakpointsMedia'></div>
 
 **Media Queries:**
@@ -76,11 +82,13 @@ O conceito de layout responsivo surgiu em 2010, com o designer Ethan Marcotte
   A partir de **breakpoints**, ou seja, tamanho de telas especificados pelo desenvolvedor, tem-se a variação do site de modo que todo o conteúdo/funcionalidades fique bem adaptados nessa telas.
   No CSS, é onde são especificados esses breakpoints, e isso é pensado de acordo com as necessidades dos sites (público, negócio, etc).
 
+  ![sizes](https://codetea.com/content/images/2017/04/Responsive-Pure-CSS-Masonry-Layout.gif)
+
   Com as media queries e os breakpoints vamos começar a adicionar um pouco de lógica no css. O que vai acontecer é que o browser vai ler a folha de estilos, e SE a condição for verdadeira, ela vai executar o bloco de código, SENÃO ele vai apenas ignorá-lo.
 
   **SEMPRE LEMBRAR:**
   Sempre que trabalharmos com 'MEDIA QUERIES' temos que usar a metatag de nome VIEWPORT, da seguinte maneira:
-  
+
   ```
    <head>
      <meta charset="utf-8">
@@ -119,7 +127,7 @@ Esta tag diz ao browser para renderizar o conteúdo do site de acordo com os dif
           }
         }
     ```
- 
+
 
   /* esse é um bloco normal de css, o browser vai ler e mostrar esses valores na tela do usuário */
   ```
@@ -153,7 +161,7 @@ Esta tag diz ao browser para renderizar o conteúdo do site de acordo com os dif
   É o uso de % ao invés de valores absolutos(px) para definir tamanhos de elementos no CSS. Essa é uma técnica que pode ser usada sempre, não apenas visando os layouts responsivos.
  <https://www.w3schools.com/Css/css_rwd_grid.asp>
 
-  **IMPORTANTE:**
+  **Importante:**
     Como o termo Responsividade é um conceito já implementado, ambos os casos - Adaptativo e Responsivo - são sempre               considerados RESPONSIVIDADE!
     Em nossa aula vamos focar no desenvolvimento da Responsividade com Media-Queries, ou seja, com 'breakpoints' definidos.
     Assim trabalharemos com os seguintes 'breakpoints':
@@ -169,18 +177,20 @@ Quando iniciamos o projeto de um site, é importante termos em mente que o brows
 (foto de fonte do google)
 Então se queremos alterar o tamanho da fonte para nosso projeto, teremos que aplicar medidas no CSS. Neste caso, podemos usar medidas absolutas (px), ou relativas(%, em, rem).
 
-**Medida absoluta:**
-  * px: o pixel é uma medida fixa, logo absoluta. Quando aplicamos um valor para a fonte em px, dizemos ao navegador que o tamanho da nossa fonte será sempre aquele, independente de tamanho e resolução de telas.
-  
-**Medidas relativas:**
-  * em: Ao declararmos um valor com unidade em, dizemos que esse número é relativo ao tamanho da fonte do elemento pai.
-  * rem("root em"): A unidade rem é relativa ao elemento root, ou seja, o valor da fonte definida no html ou body.
-  Ex: 1em = valor declarado para a fonte onde ele esteja sendo usado
-      1rem = valor declarado para a fonte na raiz do projeto (html, body)
-  * vh: viewport-height é nome para vh - quando se aplica a unidade vh, temos que o valor também aplicado é de 1% do valor da altura do container onde se está trabalhando(viewport).
-  * vw: viewport-width é o nome para vw - quando se aplica a unidade vw, temos que o valor também aplicado é de 1% do valor da largura do container onde se está trabalhando(viewport).
+![measures](https://webandcrafts.com/blog/wp-content/uploads/2019/02/Relative-units.gif)
 
-  **O em é uma maneira mais rápida de usar a porcentagem, e seu uso surgiu da época das gráficas de jornais impressos, que definiram o valor 1em como sendo o tamanho da letra "M", em maiúscula.**
+  **Medida absoluta:**
+    * px: o pixel é uma medida fixa, logo absoluta. Quando aplicamos um valor para a fonte em px, dizemos ao navegador que o tamanho da nossa fonte será sempre aquele, independente de tamanho e resolução de telas.
+
+  **Medidas relativas:**
+    * em: Ao declararmos um valor com unidade em, dizemos que esse número é relativo ao tamanho da fonte do elemento pai.
+    * rem("root em"): A unidade rem é relativa ao elemento root, ou seja, o valor da fonte definida no html ou body.
+    Ex: 1em = valor declarado para a fonte onde ele esteja sendo usado
+        1rem = valor declarado para a fonte na raiz do projeto (html, body)
+    * vh: viewport-height é nome para vh - quando se aplica a unidade vh, temos que o valor também aplicado é de 1% do valor da altura do container onde se está trabalhando(viewport).
+    * vw: viewport-width é o nome para vw - quando se aplica a unidade vw, temos que o valor também aplicado é de 1% do valor da largura do container onde se está trabalhando(viewport).
+
+    **Curiosidade: O em é uma maneira mais rápida de usar a porcentagem, e seu uso surgiu da época das gráficas de jornais impressos, que definiram o valor 1em como sendo o tamanho da letra "M", em maiúscula.**
 
 <div id='imagensResponsivas'></div>
 
@@ -188,6 +198,8 @@ Então se queremos alterar o tamanho da fonte para nosso projeto, teremos que ap
 
 Ao se trabalhar com imagens em um projeto, devemos deixá-las escaláveis para responder proporcionalmente ao tamanho de variadas telas.
 Um bom macete para fazer com que todas as imagens usadas no projeto sejam também responsivas, é criar uma classe no CSS, e aplicar essa classe em todas as tags de imagem do HTML.
+
+![image](https://www.elegantthemes.com/blog/wp-content/uploads/2018/09/5-column-layout-featured-image.jpg)
 
 ```
 .img-responsive {
@@ -205,7 +217,7 @@ Um bom macete para fazer com que todas as imagens usadas no projeto sejam també
 
 <div id='mobileFirst'></div>
 
-**Oque é Mobile First:**
+**O que é Mobile First:**
 
 Quando construimos o nosso projeto para que seja prioritariamente visualizado em formato mobile. Assim a contrução do nosso CSS parte de configuraçao e funcionalidade que serão usados em devices menores, como um celular, por exemplo.
 
@@ -214,7 +226,9 @@ Quando construimos o nosso projeto para que seja prioritariamente visualizado em
   Mas é bem importante trabalhar bem o CSS de modo a não deixar perder funcionalidades em telas maiores.
 
   Ex: Nosso ponto de partida é uma tela 768px. Ao invés de mudar os estilos à medida que a largura fica menor que 768px, nós devemos mudar o estilo da página à medida que a largura fica maior que 768px. Isso faz o nosso projeto Mobile First!
-        
+
+  ![mobile-desktop](https://urucumdigital.com/wp-content/uploads/2019/08/3038367-slide-s-8-9-gifs-that-explain-responsive-design-brilliantly-08desktop-first-vs-mobile-first-3.gif)
+
 <div id='displays'></div>
 
 **Display: flex:**
@@ -248,13 +262,13 @@ Testar seu projeto ou aplicação em diferentes navegadores (browsers) e observa
   * Google insights
   * What is my screen resolution
   * Chrome DevTools
-  
-  
+
+
   <div id='exercicio'></div>
 
 ## Exercício - Aula 24/10
 
->>Página de Currículo pessoal
+* Página de Currículo pessoal
 
 __________________________________________
 Links para consulta:
