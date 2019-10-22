@@ -1,7 +1,7 @@
 # On4-Responsivo
 Turma Online 4 | Front-end | 2019 | Semana 1 | Responsivo
 ---
-Layout Responsivo:
+##Layout Responsivo:
 
 1 [Adaptativo e Responsivo](#layoutResponsivo)
 
@@ -21,13 +21,13 @@ Layout Responsivo:
 
 **[Exercício - Aula 25/10](#exercicio)**
 
-***
+* * * * *
 
 <div id='layoutResponsivo'></div>
 
 **ADAPTATIVO E RESPONSIVO:**
 
-O conceito de layout responsivo surgiu em 2010, com o designer Ethan Marcotte
+O conceito de *layout responsivo* surgiu em 2010, com o designer Ethan Marcotte
 (https://alistapart.com/d/responsive-web-design/ex/ex-site-flexible.html https://alistapart.com/article/responsive-web-design) como uma forma de facilitar a adaptação de telas aos mais diversos tipos de tamanhos que começaram a surgir no mercado.
 
 ![gif-responsivo](https://cdn.dribbble.com/users/1112522/screenshots/5348827/mondrian-art-css-grid.gif)
@@ -44,18 +44,18 @@ O conceito de layout responsivo surgiu em 2010, com o designer Ethan Marcotte
   ![adaptativo-responsivo](https://cdn-images-1.medium.com/max/1600/0*OVrwzPJUFzwId2gM.)
 
   **Pontos positivos Adaptativo:**
-  * UX friendly: mantém o mesmo design adaptado para diferentes formatos de tela, sempre pensando na melhor usabilidade para cada formato;
-  * É mais barato desenvolver um site responsivo do que ter que desenvolver versões diferentes do site, como uma versão mobile, por exemplo;
-  * É mais fácil dar manutenção, porque o código está todo em um lugar só (se tivesse uma versão mobile e um app, por exemplo, uma mudança de código teria que ser feita em três lugares);
-  * SEO friendly: como a aplicação só tem uma URL isso ajuda a manter todos os dados consistentes e a melhorar a posição no ranking do Google.
+    * UX friendly: mantém o mesmo design adaptado para diferentes formatos de tela, sempre pensando na melhor usabilidade para cada formato;
+    * É mais barato desenvolver um site responsivo do que ter que desenvolver versões diferentes do site, como uma versão mobile, por exemplo;
+    * É mais fácil dar manutenção, porque o código está todo em um lugar só (se tivesse uma versão mobile e um app, por exemplo, uma mudança de código teria que ser feita em três lugares);
+    * SEO friendly: como a aplicação só tem uma URL isso ajuda a manter todos os dados consistentes e a melhorar a posição no ranking do Google.
 
   **Pontos negativos Adaptativo:**
-  * Normalmente os desenvolvedores testam o site nas principais resoluções/dispositivos disponíveis no mercado, porém é possível que em alguns dispositivos com formato de tela/resoluções não tão comuns o site não renderize conforme o esperado;
-  * Versões antigas do IE;
-  * Se o layout e a arquitetura do código não forem desenhadas antes de começar o trabalho, o site pode ficar muito difícil de manter/modificar;
-  * O site responsivo pode ser mais demorado para carregar (se tiver muitas imagens redimensionadas, se tiver muitas chamadas externas de scripts, etc.).
+    * Normalmente os desenvolvedores testam o site nas principais resoluções/dispositivos disponíveis no mercado, porém é possível que em alguns dispositivos com formato de tela/resoluções não tão comuns o site não renderize conforme o esperado;
+    * Versões antigas do IE;
+    * Se o layout e a arquitetura do código não forem desenhadas antes de começar o trabalho, o site pode ficar muito difícil de manter/modificar;
+    * O site responsivo pode ser mais demorado para carregar (se tiver muitas imagens redimensionadas, se tiver muitas chamadas externas de scripts, etc.).
 
-  ---
+* * * * *
 
   <div id='resolucaoTamanho'></div>
 
@@ -77,7 +77,7 @@ O conceito de layout responsivo surgiu em 2010, com o designer Ethan Marcotte
 
   Dispositivos com o mesmo tamanho podem ter resoluções de tela diferentes!
 
-  ---
+* * * * *
 
 <div id='breakpointsMedia'></div>
 
@@ -163,6 +163,7 @@ Esta tag diz ao browser para renderizar o conteúdo do site de acordo com os dif
   ```
   
   **GRID FLUIDO:**
+  
   É o uso de % ao invés de valores absolutos(px) para definir tamanhos de elementos no CSS. Essa é uma técnica que pode ser usada sempre, não apenas visando os layouts responsivos.
  <https://www.w3schools.com/Css/css_rwd_grid.asp>
 
@@ -174,7 +175,7 @@ Esta tag diz ao browser para renderizar o conteúdo do site de acordo com os dif
     768px (tablet - vertical)
     420px (mobile)**
 
----
+* * * * *
 
 <div id='unidadesMedida'></div>
 
@@ -187,28 +188,34 @@ Então se queremos alterar o tamanho da fonte para nosso projeto, teremos que ap
 ![measures](https://webandcrafts.com/blog/wp-content/uploads/2019/02/Relative-units.gif)
 
   **Medida absoluta:**
+  
     * px: o pixel é uma medida fixa, logo absoluta. Quando aplicamos um valor para a fonte em px, dizemos ao navegador que o tamanho da nossa fonte será sempre aquele, independente de tamanho e resolução de telas.
 
   **Medidas relativas:**
+  
     * em: Ao declararmos um valor com unidade em, dizemos que esse número é relativo ao tamanho da fonte do elemento pai.
+    
+    ![em](https://codepen.io/gisantin/pen/qBBrZEy)
+    
     * rem("root em"): A unidade rem é relativa ao elemento root, ou seja, o valor da fonte definida no html ou body.
     Ex: 1em = valor declarado para a fonte onde ele esteja sendo usado
         1rem = valor declarado para a fonte na raiz do projeto (html, body)
+        
     * vh: viewport-height é nome para vh - quando se aplica a unidade vh, temos que o valor também aplicado é de 1% do valor da altura do container onde se está trabalhando(viewport).
+    
     * vw: viewport-width é o nome para vw - quando se aplica a unidade vw, temos que o valor também aplicado é de 1% do valor da largura do container onde se está trabalhando(viewport).
 
     **Curiosidade: O em é uma maneira mais rápida de usar a porcentagem, e seu uso surgiu da época das gráficas de jornais impressos, que definiram o valor 1em como sendo o tamanho da letra "M", em maiúscula.**
 
 <div id='imagensResponsivas'></div>
 
----
+* * * * *
+
 
 **IMAGENS RESPONSIVAS:**
 
-Ao se trabalhar com imagens em um projeto, devemos deixá-las escaláveis para responder proporcionalmente ao tamanho de variadas telas.
-Um bom macete para fazer com que todas as imagens usadas no projeto sejam também responsivas, é criar uma classe no CSS, e aplicar essa classe em todas as tags de imagem do HTML.
-
-![image](https://www.elegantthemes.com/blog/wp-content/uploads/2018/09/5-column-layout-featured-image.jpg)
+ Ao se trabalhar com imagens em um projeto, devemos deixá-las escaláveis para responder proporcionalmente ao tamanho de variadas telas.
+ Um bom macete para fazer com que todas as imagens usadas no projeto sejam também responsivas, é criar uma classe no CSS, e aplicar essa classe em todas as tags de imagem do HTML.
 
 ```
 .img-responsive {
@@ -218,21 +225,27 @@ Um bom macete para fazer com que todas as imagens usadas no projeto sejam també
   display: block;
 }
 ```
- **FORMATOS DE ARQUIVOS DE IMAGENS:**
-  * JPEG ou JPG: mais popular e permite compressão de imagens. Salvar em JPG imagens mais simples que não precisem ser aumentadas
-  * PNG: imagens com transparência e melhor qualidade. Também permite compressão e com qualidade melhor que JPG mas são arquivos mais pesados.
-  * SVG: É um vetor e não uma imagem. Ele é um arquivo com instruções xml que criam um desenho vetorizado na tela. O .sg não perde qualidade e pode ser ampliado quase infinitamente. É recomendado para ícones e logotipos.
-  * GIF: Permite salvar animações, porém com qualidade de imagem bem ruim. onde
 
----
+![image](https://www.elegantthemes.com/blog/wp-content/uploads/2018/09/5-column-layout-featured-image.jpg)
+
+
+ **FORMATOS DE ARQUIVOS DE IMAGENS:**
+ 
+   * JPEG ou JPG: mais popular e permite compressão de imagens. Salvar em JPG imagens mais simples que não precisem ser aumentadas
+   * PNG: imagens com transparência e melhor qualidade. Também permite compressão e com qualidade melhor que JPG mas são arquivos mais pesados.
+   * SVG: É um vetor e não uma imagem. Ele é um arquivo com instruções xml que criam um desenho vetorizado na tela. O .sg não perde qualidade e pode ser ampliado quase infinitamente. É recomendado para ícones e logotipos.
+   * GIF: Permite salvar animações, porém com qualidade de imagem bem ruim. onde
+
+* * * * *
 
 <div id='mobileFirst'></div>
 
 **O QUE É MOBILE FIRST:**
 
-Quando construimos o nosso projeto para que seja prioritariamente visualizado em formato mobile. Assim a contrução do nosso CSS parte de configuraçao e funcionalidade que serão usados em devices menores, como um celular, por exemplo.
+ Quando construimos o nosso projeto para que seja prioritariamente visualizado em formato mobile. Assim a contrução do nosso CSS parte de configuraçao e funcionalidade que serão usados em devices menores, como um celular, por exemplo.
 
   **Pq é importante**
+  
   O celulares ou tablets, aparelhos cada vez mais portáteis, são os principais meios de acesso à internet. Logo, desenvolvermos sites priorizando a performance nesses aparelhos é muito importante para um negócio\produto.
   Mas é bem importante trabalhar bem o CSS de modo a não deixar perder funcionalidades em telas maiores.
 
@@ -242,12 +255,12 @@ Quando construimos o nosso projeto para que seja prioritariamente visualizado em
 
 <div id='displays'></div>
 
----
+* * * * *
 
 **DISPLAY: FLEX :**
 
-A propriedade de css display: flex permite alinhar com facilidade elementos lado a lado.
-Você deve adicionar a propriedade no elemento pai para alinhar o conteúdo filho lado a lado.
+ A propriedade de css display: flex permite alinhar com facilidade elementos lado a lado.
+ Você deve adicionar a propriedade no elemento pai para alinhar o conteúdo filho lado a lado.
 ```
 <nav class="container">
   <div>Home</div>
@@ -260,18 +273,19 @@ Você deve adicionar a propriedade no elemento pai para alinhar o conteúdo filh
 }
  ```
 
-O display: flex tem propriedade complementares que permitem alinhar os elementos filhos ao centro, à direita, à esquerda, tanto na horizontal como na vertical.
+ O display: flex tem propriedade complementares que permitem alinhar os elementos filhos ao centro, à direita, à esquerda, tanto na horizontal como na vertical.
 
 Exercício para treinar: <https://flexboxfroggy.com/#pt-br>
 Guia Flexbox: <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
 
 <div id='crossBrowser'></div>
 
----
+* * * * *
+
 
 **CROSS-BROWSER TESTING:**
 
-Testar seu projeto ou aplicação em diferentes navegadores (browsers) e observar se todos ou a maioria deles mantém estilo e funcionalidades originais sem comprometer sua qualidade de navegaçao/usabilidade.
+ Testar seu projeto ou aplicação em diferentes navegadores (browsers) e observar se todos ou a maioria deles mantém estilo e funcionalidades originais sem comprometer sua qualidade de navegaçao/usabilidade.
 
   **Como testar?:**
   * BrowserStack
@@ -282,7 +296,8 @@ Testar seu projeto ou aplicação em diferentes navegadores (browsers) e observa
 
   <div id='exercicio'></div>
 
- ---
+ * * * * *
+
 
 ## Exercício - Aula 25/10
 
@@ -294,7 +309,7 @@ Testar seu projeto ou aplicação em diferentes navegadores (browsers) e observa
     375px (mobile)**
 
 
----
+* * * * *
 
 Links para consulta:
 
