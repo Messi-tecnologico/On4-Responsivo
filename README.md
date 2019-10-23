@@ -27,6 +27,8 @@ Turma Online 4 | Front-end | 2019 | Semana 1 | Responsivo
 
 **ADAPTATIVO E RESPONSIVO:**
 
+---
+
 O conceito de *layout responsivo* surgiu em 2010, com o designer Ethan Marcotte
 (https://alistapart.com/d/responsive-web-design/ex/ex-site-flexible.html https://alistapart.com/article/responsive-web-design) como uma forma de facilitar a adaptação de telas aos mais diversos tipos de tamanhos que começaram a surgir no mercado.
 
@@ -61,6 +63,8 @@ O conceito de *layout responsivo* surgiu em 2010, com o designer Ethan Marcotte
 
 **RESOLUÇÃO DE TELA x TAMANHO DE TELA:**
 
+---
+
   * Resolução de tela: A resolução da tela de um dispositivo é o número de pixels em cada dimensão que podem ser exibidos.
 
        ![pixel](https://www.exposureguide.com/media/resolution-of-the-image-in-pixels.jpg?x51595)
@@ -82,6 +86,8 @@ O conceito de *layout responsivo* surgiu em 2010, com o designer Ethan Marcotte
 <div id='breakpointsMedia'></div>
 
 **MEDIA QUERIES:**
+
+---
 
  A partir de **breakpoints**, ou seja, tamanho de telas especificados pelo desenvolvedor, tem-se a variação do site de modo que todo o conteúdo/funcionalidades fique bem adaptados nessa telas.
  
@@ -170,21 +176,28 @@ A propriedade initial-scale controla o nível de amplificação quando a página
   **GRID FLUIDO:**
   
 É o uso de % ao invés de valores absolutos(px) para definir tamanhos de elementos no CSS. Essa é uma técnica que pode ser usada sempre, não apenas visando os layouts responsivos.
- <https://www.w3schools.com/Css/css_rwd_grid.asp>
+
+ **Para ler:** <https://www.w3schools.com/Css/css_rwd_grid.asp>
 
   **Importante:**
-    Como o termo Responsividade é um conceito já implementado, ambos os casos - Adaptativo e Responsivo - são sempre               considerados RESPONSIVIDADE!
-    Em nossa aula vamos focar no desenvolvimento da Responsividade com Media-Queries, ou seja, com 'breakpoints' definidos.
-    Assim trabalharemos com os seguintes 'breakpoints':
-    **1280px (desktop)
-    768px (tablet - vertical)
-    420px (mobile)**
+  Como o termo Responsividade é um conceito já implementado, ambos os casos - Adaptativo e Responsivo - são sempre               considerados RESPONSIVIDADE!
+
+  Em nossa aula vamos focar no desenvolvimento da Responsividade com Media-Queries, ou seja, com 'breakpoints' definidos.
+  Assim trabalharemos com os seguintes 'breakpoints':
+
+  **1280px (desktop)**
+  
+  **768px (tablet - vertical)**
+  
+  **420px (mobile)**
 
 * * * * *
 
 <div id='unidadesMedida'></div>
 
 **FONT-SIZE E AS UNIDADES DE MEDIDAS EM RESPONSIVIDADE:**
+
+---
 
  Quando iniciamos o projeto de um site, é importante termos em mente que o browser já aplica um tamanho padrão de fonte.
  
@@ -218,16 +231,17 @@ A propriedade initial-scale controla o nível de amplificação quando a página
    
    **Viewport** nada mais é que a área visível de uma página web para o seu usuário, essa viewport pode variar de acordo com o dispositivo, sendo menor em celulares e maior em desktops.
    
+* * * * *
 
 <div id='imagensResponsivas'></div>
 
-* * * * *
-
-
 **IMAGENS RESPONSIVAS:**
 
- Ao se trabalhar com imagens em um projeto, devemos deixá-las escaláveis para responder proporcionalmente ao tamanho de variadas telas.
- Um bom macete para fazer com que todas as imagens usadas no projeto sejam também responsivas, é criar uma classe no CSS, e aplicar essa classe em todas as tags de imagem do HTML.
+---
+
+Ao se trabalhar com imagens em um projeto, devemos deixá-las escaláveis para responder proporcionalmente ao tamanho de variadas telas.
+ 
+Um bom macete para fazer com que todas as imagens usadas no projeto sejam também responsivas, é criar uma classe no CSS, e aplicar essa classe em todas as tags de imagem do HTML.
 
 ```
 .img-responsive {
@@ -254,24 +268,31 @@ A propriedade initial-scale controla o nível de amplificação quando a página
 
 **O QUE É MOBILE FIRST:**
 
- Quando construimos o nosso projeto para que seja prioritariamente visualizado em formato mobile. Assim a contrução do nosso CSS parte de configuraçao e funcionalidade que serão usados em devices menores, como um celular, por exemplo.
+---
+
+Quando construimos o nosso projeto para que seja prioritariamente visualizado em formato mobile. Assim a contrução do nosso CSS parte de configuraçao e funcionalidade que serão usados em devices menores, como um celular, por exemplo.
 
   **Pq é importante**
   
-  O celulares ou tablets, aparelhos cada vez mais portáteis, são os principais meios de acesso à internet. Logo, desenvolvermos sites priorizando a performance nesses aparelhos é muito importante para um negócio\produto.
-  Mas é bem importante trabalhar bem o CSS de modo a não deixar perder funcionalidades em telas maiores.
+O celulares ou tablets, aparelhos cada vez mais portáteis, são os principais meios de acesso à internet. Logo, desenvolvermos sites priorizando a performance nesses aparelhos é muito importante para um negócio\produto.
 
-  Ex: Nosso ponto de partida é uma tela 768px. Ao invés de mudar os estilos à medida que a largura fica menor que 768px, nós devemos mudar o estilo da página à medida que a largura fica maior que 768px. Isso faz o nosso projeto Mobile First!
+Mas é bem importante trabalhar bem o CSS de modo a não deixar perder funcionalidades em telas maiores.
+
+Ex: Nosso ponto de partida é uma tela 768px. Ao invés de mudar os estilos à medida que a largura fica menor que 768px, nós devemos mudar o estilo da página à medida que a largura fica maior que 768px. Isso faz o nosso projeto Mobile First!
 
   ![mobile-desktop](https://urucumdigital.com/wp-content/uploads/2019/08/3038367-slide-s-8-9-gifs-that-explain-responsive-design-brilliantly-08desktop-first-vs-mobile-first-3.gif)
 
-<div id='displays'></div>
 
 * * * * *
 
+<div id='displays'></div>
+
 **DISPLAY: FLEX :**
 
+---
+
  A propriedade de css display: flex permite alinhar com facilidade elementos lado a lado.
+ 
  Você deve adicionar a propriedade no elemento pai para alinhar o conteúdo filho lado a lado.
  
 ![flex-direction](https://cdn-media-1.freecodecamp.org/images/HHwxqz2N4bNksz9YwcMBAtD0z9TTCxeNXNBS)
@@ -290,19 +311,20 @@ A propriedade initial-scale controla o nível de amplificação quando a página
  
   ![flexbox](https://cdn-media-1.freecodecamp.org/images/6WwoIEc45lUHUcFQCmD8GmziiISm2lO64Y1-)
 
- O display: flex tem propriedade complementares que permitem alinhar os elementos filhos ao centro, à direita, à esquerda, tanto na horizontal como na vertical.
+O display: flex tem propriedade complementares que permitem alinhar os elementos filhos ao centro, à direita, à esquerda, tanto na horizontal como na vertical.
 
 **Exercício para treinar:** <https://flexboxfroggy.com/#pt-br>
 Guia Flexbox: <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
 
-<div id='crossBrowser'></div>
-
 * * * * *
 
+<div id='crossBrowser'></div>
 
 **CROSS-BROWSER TESTING:**
 
- Testar seu projeto ou aplicação em diferentes navegadores (browsers) e observar se todos ou a maioria deles mantém estilo e funcionalidades originais sem comprometer sua qualidade de navegaçao/usabilidade.
+---
+
+Testar seu projeto ou aplicação em diferentes navegadores (browsers) e observar se todos ou a maioria deles mantém estilo e funcionalidades originais sem comprometer sua qualidade de navegaçao/usabilidade.
  
  ![browsers](https://i.pinimg.com/originals/8c/0b/27/8c0b2725800f5939902ece759c9129ef.gif)
 
@@ -312,25 +334,37 @@ Guia Flexbox: <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
   * What is my screen resolution
   * Chrome DevTools
 
+* * * * *
 
-  <div id='exercicio'></div>
-
- * * * * *
-
+<div id='exercicio'></div>
 
 ## Exercício - Aula 25/10
 
+---
+
 **Página de Currículo pessoal:**
- Vamos usar o projeto que desenvolvemos no Workshop - Currrículo Pessoal - e vamos trabalhar a aplicação do conceito de responsividade.
+
+Vamos usar o projeto que desenvolvemos no Workshop - Currrículo Pessoal - e vamos trabalhar a aplicação do conceito de responsividade.
+
+   [![pag-1](https://user-images.githubusercontent.com/42356402/67355374-7febbd00-f52d-11e9-866c-d96b13902bc6.png)]
+   
+   [![pag-2](https://user-images.githubusercontent.com/42356402/67355439-a4e03000-f52d-11e9-84b9-da8399a2a27a.png)]
+   
+   
+Utilizaremos os seguintes breakpoints:
  
- Utilizaremos os seguintes breakpoints:
  **1024px(tablet horizontal)**
+ 
   **768px (tablet - vertical)**
+  
   **420px (mobile)**
+  
   **375px (mobile)** 
  
  O ideal para o exercíco é escrever pelo menos dois breakpoints, de modo que se vejam mudanças entre um e outro. 
  Para treinar, podem desenvolver em todos os sugeridos ou mais! =)
+ 
+ **DICA:** Pesquisem modelos de layout responsivo na internet (Pinterest, Google etc...) e veja como/quais elementos se adequam melhor a cada breakpoint!!!
 
 
 * * * * *
