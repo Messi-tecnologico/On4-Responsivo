@@ -224,7 +224,7 @@ A propriedade initial-scale controla o nível de amplificação quando a página
     Ex: 1em = valor declarado para a fonte onde ele esteja sendo usado
         1rem = valor declarado para a fonte na raiz do projeto (html, body)
         
-   [![rem](https://user-images.githubusercontent.com/42356402/67354274-1cf92680-f52b-11e9-9660-75fdd95bbad2.png)](https://codepen.io/gisantin/pen/WNNpwRG)
+   [![rem](https://user-images.githubusercontent.com/42356402/67407721-4eefa480-f58e-11e9-8854-e3210c4d4916.png)](https://codepen.io/gisantin/pen/WNNpwRG)
    
     
    * vh: viewport-height é nome para vh - quando se aplica a unidade vh, temos que o valor também aplicado é de 1% do valor da altura do container onde se está trabalhando(viewport).
