@@ -83,12 +83,13 @@ O conceito de *layout responsivo* surgiu em 2010, com o designer Ethan Marcotte
 
 **MEDIA QUERIES:**
 
-  A partir de **breakpoints**, ou seja, tamanho de telas especificados pelo desenvolvedor, tem-se a variação do site de modo que todo o conteúdo/funcionalidades fique bem adaptados nessa telas.
-  No CSS, é onde são especificados esses breakpoints, e isso é pensado de acordo com as necessidades dos sites (público, negócio, etc).
+ A partir de **breakpoints**, ou seja, tamanho de telas especificados pelo desenvolvedor, tem-se a variação do site de modo que todo o conteúdo/funcionalidades fique bem adaptados nessa telas.
+ 
+No CSS, é onde são especificados esses breakpoints, e isso é pensado de acordo com as necessidades dos sites (público, negócio, etc)
 
    ![sizes](https://codetea.com/content/images/2017/04/Responsive-Pure-CSS-Masonry-Layout.gif)
 
-  Com as media queries e os breakpoints vamos começar a adicionar um pouco de lógica no css. O que vai acontecer é que o browser vai ler a folha de estilos, e SE a condição for verdadeira, ela vai executar o bloco de código, SENÃO ele vai apenas ignorá-lo.
+Com as media queries e os breakpoints vamos começar a adicionar um pouco de lógica no css. O que vai acontecer é que o browser vai ler a folha de estilos, e SE a condição for verdadeira, ela vai executar o bloco de código, SENÃO ele vai apenas ignorá-lo.
 
   **SEMPRE LEMBRAR:**
   Sempre que trabalharmos com 'MEDIA QUERIES' temos que usar a metatag de nome VIEWPORT, da seguinte maneira:
@@ -102,6 +103,10 @@ O conceito de *layout responsivo* surgiu em 2010, com o designer Ethan Marcotte
    ```
 
 Esta tag diz ao browser para renderizar o conteúdo do site de acordo com os diferentes tamanhos dos dispositivos
+
+A propriedade width controla o tamanho da viewport. O valor desta propriedade pode ser definido com um número específico de píxels como por exemplo width=600 ou com um valor especial chamado device-width que representa a largura da onde o conteúdo está sendo apresentado em pixels de CSS considerando uma escala de 100%. (Ainda há as propriedades height e device-height, as quais podem ser úteis para páginas com elementos que mudam de posição baseado na altura da viewport.)
+
+A propriedade initial-scale controla o nível de amplificação quando a página é carregada pela primeira vez.
 
   * Trabalhando com 'MEDIA QUERIES':
 
@@ -164,7 +169,7 @@ Esta tag diz ao browser para renderizar o conteúdo do site de acordo com os dif
   
   **GRID FLUIDO:**
   
-  É o uso de % ao invés de valores absolutos(px) para definir tamanhos de elementos no CSS. Essa é uma técnica que pode ser usada sempre, não apenas visando os layouts responsivos.
+É o uso de % ao invés de valores absolutos(px) para definir tamanhos de elementos no CSS. Essa é uma técnica que pode ser usada sempre, não apenas visando os layouts responsivos.
  <https://www.w3schools.com/Css/css_rwd_grid.asp>
 
   **Importante:**
@@ -181,31 +186,38 @@ Esta tag diz ao browser para renderizar o conteúdo do site de acordo com os dif
 
 **FONT-SIZE E AS UNIDADES DE MEDIDAS EM RESPONSIVIDADE:**
 
-Quando iniciamos o projeto de um site, é importante termos em mente que o browser já aplica um tamanho padrão de fonte.
-(foto de fonte do google)
-Então se queremos alterar o tamanho da fonte para nosso projeto, teremos que aplicar medidas no CSS. Neste caso, podemos usar medidas absolutas (px), ou relativas(%, em, rem).
+ Quando iniciamos o projeto de um site, é importante termos em mente que o browser já aplica um tamanho padrão de fonte.
+ 
+ ![chrome](https://user-images.githubusercontent.com/42356402/67354393-62b5ef00-f52b-11e9-9f01-4d4b34325b98.png)
+ 
+ Então se queremos alterar o tamanho da fonte para nosso projeto, teremos que aplicar medidas no CSS. Neste caso, podemos usar medidas absolutas (px), ou relativas(%, em, rem).
 
 ![measures](https://webandcrafts.com/blog/wp-content/uploads/2019/02/Relative-units.gif)
 
   **Medida absoluta:**
   
-    * px: o pixel é uma medida fixa, logo absoluta. Quando aplicamos um valor para a fonte em px, dizemos ao navegador que o tamanho da nossa fonte será sempre aquele, independente de tamanho e resolução de telas.
+   * px: o pixel é uma medida fixa, logo absoluta. Quando aplicamos um valor para a fonte em px, dizemos ao navegador que o tamanho da nossa fonte será sempre aquele, independente de tamanho e resolução de telas.
 
   **Medidas relativas:**
   
-    * em: Ao declararmos um valor com unidade em, dizemos que esse número é relativo ao tamanho da fonte do elemento pai.
+   * em: Ao declararmos um valor com unidade em, dizemos que esse número é relativo ao tamanho da fonte do elemento pai.
+   
+   **Curiosidade: O em é uma maneira mais rápida de usar a porcentagem, e seu uso surgiu da época das gráficas de jornais impressos, que definiram o valor 1em como sendo o tamanho da letra "M", em maiúscula.**
     
-    ![em](https://codepen.io/gisantin/pen/qBBrZEy)
+   [![em](https://user-images.githubusercontent.com/42356402/67354175-c855ab80-f52a-11e9-982c-6f8cb1cf03a2.png)](https://codepen.io/gisantin/pen/qBBrZEy)
     
-    * rem("root em"): A unidade rem é relativa ao elemento root, ou seja, o valor da fonte definida no html ou body.
+   * rem("root em"): A unidade rem é relativa ao elemento root, ou seja, o valor da fonte definida no html ou body.
     Ex: 1em = valor declarado para a fonte onde ele esteja sendo usado
         1rem = valor declarado para a fonte na raiz do projeto (html, body)
         
-    * vh: viewport-height é nome para vh - quando se aplica a unidade vh, temos que o valor também aplicado é de 1% do valor da altura do container onde se está trabalhando(viewport).
+   [![rem](https://user-images.githubusercontent.com/42356402/67354274-1cf92680-f52b-11e9-9660-75fdd95bbad2.png)](https://codepen.io/gisantin/pen/WNNpwRG)
     
-    * vw: viewport-width é o nome para vw - quando se aplica a unidade vw, temos que o valor também aplicado é de 1% do valor da largura do container onde se está trabalhando(viewport).
-
-    **Curiosidade: O em é uma maneira mais rápida de usar a porcentagem, e seu uso surgiu da época das gráficas de jornais impressos, que definiram o valor 1em como sendo o tamanho da letra "M", em maiúscula.**
+   * vh: viewport-height é nome para vh - quando se aplica a unidade vh, temos que o valor também aplicado é de 1% do valor da altura do container onde se está trabalhando(viewport).
+    
+   * vw: viewport-width é o nome para vw - quando se aplica a unidade vw, temos que o valor também aplicado é de 1% do valor da largura do container onde se está trabalhando(viewport).
+   
+   **Viewport** nada mais é que a área visível de uma página web para o seu usuário, essa viewport pode variar de acordo com o dispositivo, sendo menor em celulares e maior em desktops.
+   
 
 <div id='imagensResponsivas'></div>
 
@@ -261,6 +273,9 @@ Então se queremos alterar o tamanho da fonte para nosso projeto, teremos que ap
 
  A propriedade de css display: flex permite alinhar com facilidade elementos lado a lado.
  Você deve adicionar a propriedade no elemento pai para alinhar o conteúdo filho lado a lado.
+ 
+![flex-direction](https://cdn-media-1.freecodecamp.org/images/HHwxqz2N4bNksz9YwcMBAtD0z9TTCxeNXNBS)
+ 
 ```
 <nav class="container">
   <div>Home</div>
@@ -272,10 +287,12 @@ Então se queremos alterar o tamanho da fonte para nosso projeto, teremos que ap
   display: flex;
 }
  ```
+ 
+  ![flexbox](https://cdn-media-1.freecodecamp.org/images/6WwoIEc45lUHUcFQCmD8GmziiISm2lO64Y1-)
 
  O display: flex tem propriedade complementares que permitem alinhar os elementos filhos ao centro, à direita, à esquerda, tanto na horizontal como na vertical.
 
-Exercício para treinar: <https://flexboxfroggy.com/#pt-br>
+**Exercício para treinar:** <https://flexboxfroggy.com/#pt-br>
 Guia Flexbox: <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
 
 <div id='crossBrowser'></div>
@@ -286,6 +303,8 @@ Guia Flexbox: <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
 **CROSS-BROWSER TESTING:**
 
  Testar seu projeto ou aplicação em diferentes navegadores (browsers) e observar se todos ou a maioria deles mantém estilo e funcionalidades originais sem comprometer sua qualidade de navegaçao/usabilidade.
+ 
+ ![browsers](https://i.pinimg.com/originals/8c/0b/27/8c0b2725800f5939902ece759c9129ef.gif)
 
   **Como testar?:**
   * BrowserStack
@@ -303,20 +322,31 @@ Guia Flexbox: <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
 
 **Página de Currículo pessoal:**
  Vamos usar o projeto que desenvolvemos no Workshop - Currrículo Pessoal - e vamos trabalhar a aplicação do conceito de responsividade.
+ 
  Utilizaremos os seguintes breakpoints:
-  **768px (tablet - vertical)
-    420px (mobile)
-    375px (mobile)**
+ **1024px(tablet horizontal)**
+  **768px (tablet - vertical)**
+  **420px (mobile)**
+  **375px (mobile)** 
+ 
+ O ideal para o exercíco é escrever pelo menos dois breakpoints, de modo que se vejam mudanças entre um e outro. 
+ Para treinar, podem desenvolver em todos os sugeridos ou mais! =)
 
 
 * * * * *
 
 Links para consulta:
 
-<https://www.w3schools.com/Css/css_rwd_mediaqueries.asp>
 <https://css-tricks.com/the-difference-between-responsive-and-adaptive-design/>
-<https://drafts.csswg.org/css-values-3/#font-relative-lengths>
-<https://www.softwaretestinghelp.com/how-is-cross-browser-testing-performed/>
 <https://nextecommerce.com.br/design-responsivo-ou-entrega-adaptativa-o-que-e-melhor-para-o-marketing-digital/>
 <https://www.freecodecamp.org/news/how-to-make-your-html-responsive-by-adding-a-single-line-of-css-2a62de81e431/>
+<https://drafts.csswg.org/css-values-3/#font-relative-lengths>
+<https://tableless.com.br/manipulando-metatag-viewport/>
+<https://www.w3schools.com/Css/css_rwd_mediaqueries.asp>
+<https://blog.caelum.com.br/flexibilidade-em-paginas-para-dispositivos-moveis-com-media-queries/>
 <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout>
+<https://www.freecodecamp.org/news/an-animated-guide-to-flexbox-d280cf6afc35/>
+<https://www.softwaretestinghelp.com/how-is-cross-browser-testing-performed/>
+
+
+
