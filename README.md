@@ -1,7 +1,7 @@
 # On4-Responsivo
 Turma Online 4 | Front-end | 2019 | Semana 1 | Responsivo
 ---
-##Layout Responsivo:
+## Layout Responsivo:
 
 1 [Adaptativo e Responsivo](#layoutResponsivo)
 
@@ -214,16 +214,18 @@ A propriedade initial-scale controla o nível de amplificação quando a página
   **Medidas relativas:**
   
    * em: Ao declararmos um valor com unidade em, dizemos que esse número é relativo ao tamanho da fonte do elemento pai.
-   
-   **Curiosidade: O em é uma maneira mais rápida de usar a porcentagem, e seu uso surgiu da época das gráficas de jornais impressos, que definiram o valor 1em como sendo o tamanho da letra "M", em maiúscula.**
     
    [![em](https://user-images.githubusercontent.com/42356402/67354175-c855ab80-f52a-11e9-982c-6f8cb1cf03a2.png)](https://codepen.io/gisantin/pen/qBBrZEy)
+   
+**Curiosidade: O em é uma maneira mais rápida de usar a porcentagem, e seu uso surgiu da época das gráficas de jornais impressos, que definiram o valor 1em como sendo o tamanho da letra "M", em maiúscula.**
+
     
    * rem("root em"): A unidade rem é relativa ao elemento root, ou seja, o valor da fonte definida no html ou body.
     Ex: 1em = valor declarado para a fonte onde ele esteja sendo usado
         1rem = valor declarado para a fonte na raiz do projeto (html, body)
         
    [![rem](https://user-images.githubusercontent.com/42356402/67354274-1cf92680-f52b-11e9-9660-75fdd95bbad2.png)](https://codepen.io/gisantin/pen/WNNpwRG)
+   
     
    * vh: viewport-height é nome para vh - quando se aplica a unidade vh, temos que o valor também aplicado é de 1% do valor da altura do container onde se está trabalhando(viewport).
     
@@ -252,7 +254,10 @@ Um bom macete para fazer com que todas as imagens usadas no projeto sejam també
 }
 ```
 
+
 ![image](https://www.elegantthemes.com/blog/wp-content/uploads/2018/09/5-column-layout-featured-image.jpg)
+
+
 
 
  **FORMATOS DE ARQUIVOS DE IMAGENS:**
@@ -272,7 +277,7 @@ Um bom macete para fazer com que todas as imagens usadas no projeto sejam també
 
 Quando construimos o nosso projeto para que seja prioritariamente visualizado em formato mobile. Assim a contrução do nosso CSS parte de configuraçao e funcionalidade que serão usados em devices menores, como um celular, por exemplo.
 
-  **Pq é importante**
+  **Por que é importante?**
   
 O celulares ou tablets, aparelhos cada vez mais portáteis, são os principais meios de acesso à internet. Logo, desenvolvermos sites priorizando a performance nesses aparelhos é muito importante para um negócio\produto.
 
@@ -314,6 +319,7 @@ Ex: Nosso ponto de partida é uma tela 768px. Ao invés de mudar os estilos à m
 O display: flex tem propriedade complementares que permitem alinhar os elementos filhos ao centro, à direita, à esquerda, tanto na horizontal como na vertical.
 
 **Exercício para treinar:** <https://flexboxfroggy.com/#pt-br>
+
 Guia Flexbox: <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
 
 * * * * *
@@ -346,9 +352,9 @@ Testar seu projeto ou aplicação em diferentes navegadores (browsers) e observa
 
 Vamos usar o projeto que desenvolvemos no Workshop - Currrículo Pessoal - e vamos trabalhar a aplicação do conceito de responsividade.
 
-   [![pag-1](https://user-images.githubusercontent.com/42356402/67355374-7febbd00-f52d-11e9-866c-d96b13902bc6.png)]
+   ![pag-1](https://user-images.githubusercontent.com/42356402/67355374-7febbd00-f52d-11e9-866c-d96b13902bc6.png)
    
-   [![pag-2](https://user-images.githubusercontent.com/42356402/67355439-a4e03000-f52d-11e9-84b9-da8399a2a27a.png)]
+   ![pag-2](https://user-images.githubusercontent.com/42356402/67355439-a4e03000-f52d-11e9-84b9-da8399a2a27a.png)
    
    
 Utilizaremos os seguintes breakpoints:
