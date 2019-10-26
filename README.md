@@ -378,14 +378,23 @@ Utilizaremos os seguintes breakpoints:
 Links para consulta:
 
 <https://css-tricks.com/the-difference-between-responsive-and-adaptive-design/>
+
 <https://nextecommerce.com.br/design-responsivo-ou-entrega-adaptativa-o-que-e-melhor-para-o-marketing-digital/>
+
 <https://www.freecodecamp.org/news/how-to-make-your-html-responsive-by-adding-a-single-line-of-css-2a62de81e431/>
+
 <https://drafts.csswg.org/css-values-3/#font-relative-lengths>
+
 <https://tableless.com.br/manipulando-metatag-viewport/>
+
 <https://www.w3schools.com/Css/css_rwd_mediaqueries.asp>
+
 <https://blog.caelum.com.br/flexibilidade-em-paginas-para-dispositivos-moveis-com-media-queries/>
+
 <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout>
+
 <https://www.freecodecamp.org/news/an-animated-guide-to-flexbox-d280cf6afc35/>
+
 <https://www.softwaretestinghelp.com/how-is-cross-browser-testing-performed/>
 
 
