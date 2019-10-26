@@ -1,0 +1,328 @@
+/*comentários no css */
+
+/*  seletor {
+  propriedade: valor;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  background-image: url("../imagens/banner-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  @media (max-width: 1024px) {
+    .banner {
+      height: 500px;
+    }
+  }
+  @media (max-width: 768px) {
+    .banner {
+      height: 350px;
+    }
+  }
+  @media (max-width: 420px) {
+    .banner {
+      height: 260px;
+    }
+  }
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.texto {
+  text-align: center;
+}
+
+  @media (max-width: 420px) {
+    .texto {
+      position: relative;
+      top: 50px;
+    }
+  }
+
+.texto h1 {
+  color: white;
+  font-size: 60px;
+}
+
+  @media (max-width: 1024px) {
+    .texto h1 {
+      font-size: 2.8em;
+      margin: 10px auto;
+    }
+  }
+  @media (max-width: 768px) {
+    .texto h1 {
+      font-size: 2em;
+    }
+  }
+  @media (max-width: 420px) {
+    .texto h1 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+  }
+
+.texto p {
+  margin-bottom: 70px;
+  color: white;
+  font-size: 25px;
+}
+
+  @media (max-width: 1024px) {
+    .texto p {
+      margin-bottom: 40px;
+    }
+  }
+  @media (max-width: 768px) {
+    .texto p {
+      font-size: 1.5em;
+      margin-bottom: 25px;
+    }
+  }
+  @media (max-width: 420px) {
+    .texto p {
+      margin: 12px;
+      font-size: 1em;
+    }
+  }
+
+.texto a {
+  background-color: white;
+  color: #826994;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 16px 56px;
+  border-radius: 30px;
+}
+
+  @media (max-width: 1024px) {
+    .texto a {
+      padding: 12px 50px;
+    }
+  }
+  @media (max-width: 768px) {
+    .texto a {
+      font-size: 0.8em;
+      padding: 6px 42px;
+    }
+  }
+  @media (max-width: 420px) {
+    .texto a {
+      font-size: 0.7em;
+      padding: 5px 35px;
+    }
+  }
+
+
+/*SEGUNDA PARTE */
+
+.sobre-mim {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 80px;
+}
+
+  @media (max-width: 768px) {
+    .sobre-mim {
+      margin-bottom: 42px;
+    }
+  }
+  @media (max-width: 420px) {
+    .sobre-mim {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+.sobre-mim-descricao {
+  width: 32rem;
+  margin: 10px 0;
+  text-align: justify;
+}
+
+  @media (max-width: 768px) {
+    .sobre-mim-descricao {
+      width: 22rem;
+    }
+  }
+  @media (max-width: 420px) {
+    .sobre-mim-descricao {
+      width: 21rem;
+      margin: 25px 0;
+
+    }
+  }
+
+
+.sobre-mim-descricao h2 {
+  margin-top: 45px;
+  color: grey;
+}
+
+  @media (max-width: 768px) {
+    .sobre-mim-descricao h2 {
+      font-size: 1.4em;
+    }
+  }
+  @media (max-width: 420px) {
+    .sobre-mim-descricao h2 {
+      font-size: 1.2em;
+      text-align: center;
+    }
+  }
+
+.sobre-mim-descricao p {
+  line-height: 25px;
+  font-size: 1.2em;
+}
+
+  @media (max-width: 768px) {
+    .sobre-mim-descricao p {
+      font-size: 1em;
+      line-height: 32px;
+    }
+  }
+
+.sobre-mim-descricao a {
+  background-color: white;
+  color: #826994;
+  border: 1px solid #826994;
+  padding: 9px 53px;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+  @media (max-width: 768px) {
+    .sobre-mim-descricao a {
+      padding: 6px 32px;
+    }
+  }
+  @media (max-width: 420px) {
+    .sobre-mim-descricao a {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+.sobre-mim-lista {
+  margin-top: 40px;
+}
+
+  @media (max-width: 420px) {
+    .sobre-mim-lista {
+      margin-top: 20px;
+    }
+  }
+
+.sobre-mim-lista__titulo {
+  font-size: 17px;
+  color: grey;
+  font-size: 1.2em;
+}
+
+.sobre-mim-lista__topicos {
+  padding-left: 20px;
+  line-height: 24px;
+  font-size: 1.2em;
+}
+
+  @media (max-width: 768px) {
+    .sobre-mim-lista__topicos {
+      font-size: 1em;
+    }
+  }
+  @media (max-width: 420px) {
+    .sobre-mim-lista__topicos {
+      font-size: 1.1em;
+      line-height: 30px;
+    }
+  }
+
+/* TERCEIRA PARTE */
+
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+}
+
+  @media (max-width: 768px) {
+    .redes-sociais {
+      flex-flow: row wrap;
+      justify-content: space-around;
+    }
+  }
+
+.rede-social-especifica {
+  background-color: #826994;
+  color: white;
+  padding: 50px 40px;
+  margin: 20px;
+  text-align: center;
+}
+
+  @media (max-width: 1024px) {
+    .rede-social-especifica {
+      padding: 20px 40px;
+      background-color: #940dc1;
+    }
+  }
+  @media (max-width: 768px) {
+    .rede-social-especifica {
+      background-color: #c7ace2;
+      padding: 20px 63px;
+    }
+  }
+  @media (max-width: 420px) {
+    .rede-social-especifica {
+      display: none;
+    }
+  }
+
+.rede-social-especifica a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  background-color: #dcdcdc;
+  text-align: center;
+  padding: 20px;
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+  @media (max-width: 420px) {
+    footer {
+      margin-top: 18px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .rodape-tel {
+      display: none;
+    }
+  }
+
+.rodape p {
+  margin: 15px;
+}
+
+  @media (max-width: 768px) {
+    .rodape p {
+      margin: 13px;
+      font-size: 0.9em;
+    }
+  }
