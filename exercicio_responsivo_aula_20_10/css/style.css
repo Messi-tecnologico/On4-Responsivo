@@ -1,0 +1,321 @@
+/* BOA PRÁTICA USAR O VALOR BORDER-BOX PARA BOX-SIZING, POIS JÁ SOMA AUTOMATICAMENTE O VALOR DE PADDING E BORDER QUANDO HOUVER */
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+  /* overflow: hidden; */
+}
+
+.navbar {
+  background-color: #d1d1d1;
+  border-bottom: 1px solid #c60b66;
+  height: 90px;
+  display: flex;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+  @media (max-width: 320px) {
+    .container {
+      width: 90%;
+    }
+  }
+
+.headersite {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navlist {
+  height: 30px;
+}
+
+  @media (max-width: 320px) {
+    .navlist {
+      display: none
+    }
+  }
+
+.branding,
+.navlist {
+  margin: auto 0;
+}
+
+.branding h1 {
+  font-size: 2em;
+}
+
+  @media (max-width: 768px) {
+    .branding h1 {
+      font-size: 1.5em;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .branding h1 {
+      font-size: 1.2em;
+    }
+  }
+
+.branding span {
+  color: #c60b66;
+}
+
+.linklist {
+  display: flex;
+}
+
+.linklist li {
+  margin-left: 10px;
+  margin-right: 10px;
+  list-style-type: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+  @media (max-width: 768px) {
+    .linklist li {
+      font-size: 1em;
+    }
+  }
+
+.img-responsive {
+  width: 100%;  /* ... terão sempre 100% de largura */
+  max-width: 100%;  /* ...aqui asseguramos que essa imagem não vai 'esticar' */
+  height: auto; /* ...a altura será sempre proporcional à largura */
+  display: block;
+}
+
+.image {
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+  @media (max-width: 1024px) {
+    .image {
+      justify-content: center;
+      margin: 20px 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .image {
+      display: flex;
+      justify-content: center;
+      margin: 28px 0px;
+    }
+  }
+
+
+.image img {
+  height: 300px;
+  width: 400px;
+}
+
+  @media (max-width: 768px) {
+    .image img {
+      display: block;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .image  img {
+      display: none;
+    }
+  }
+
+.home {
+  color: #c60b66;
+}
+
+.portfolio {
+  display: flex;
+}
+
+  @media (max-width: 768px) {
+    .portfolio {
+      display: block;
+    }
+  }
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 98px;
+}
+
+  @media (max-width: 1024px) {
+    .wrapper {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .wrapper {
+      margin-bottom: 64px;
+    }
+  }
+
+.content {
+  width: 100%;
+  line-height: 30px;
+  text-align: justify;
+
+}
+
+  @media (max-width: 768px) {
+    .content {
+      line-height: 27px;
+    }
+  }
+
+.content h1 {
+  color: #c60b66;
+}
+
+.about {
+  margin-bottom: 24px;
+}
+
+.register {
+    background-color: #c60b66;
+    height: 86px;
+    padding: 24px;
+    position: relative;
+    bottom: 4.4rem;
+  }
+
+  @media (max-width: 768px){
+    .register {
+      bottom: 10.8vh;
+    }
+  }
+
+  @media (max-width: 320px){
+    .register {
+      bottom: 10.8vh;
+      height: 6.4rem;
+      padding: 14px;
+    }
+  }
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+  @media (max-width: 320px) {
+    .contact {
+      flex-direction: column;
+    }
+  }
+
+.contact h1 {
+  font-weight: 600;
+  font-size: 1.4em;
+}
+
+  @media (max-width: 768px){
+    .contact h1 {
+      font-weight: 400;
+      font-size: 1.3em;
+    }
+  }
+
+.contact-input {
+  display: flex;
+}
+
+  @media (max-width: 1024px){
+    .contact-input {
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: 320px){
+    .contact-input {
+      margin-top: 6px;
+    }
+  }
+
+input {
+  border-radius: 16px;
+  background-color: lightgray;
+  padding: 6px;
+  border: none;
+  height: 24px;
+  margin: 6px;
+}
+
+.button-1 {
+  font-size: 1.1em;
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 5px 38px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+  @media (max-width: 768px){
+    .button-1 {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 320px){
+    .button-1 {
+      padding: 5px 24px;
+      margin: 4px;
+    }
+  }
+
+.footer {
+  height: 70px;
+  background-color: #d1d1d1;
+  padding: 25px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  text-align: center;
+}
+
+  @media (max-width: 768px){
+    .footer p {
+      font-size: 1em;
+    }
+  }
+
+.minimenu {
+  display: none;
+}
+
+  @media (max-width: 320px){
+    .minimenu {
+      display: block;
+      height: 50px;
+      width: 50px;
+      margin: auto 10px;    }
+  }
